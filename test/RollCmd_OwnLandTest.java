@@ -28,6 +28,7 @@ public class RollCmd_OwnLandTest {
         when(gameMap.getPlace(anyInt())).thenReturn(ownLand);
         when(ownLand.getOwner()).thenReturn(other);
     }
+
     @Test
     public void should_wait_for_upgrade_response_after_roll_to_Ownland() throws Exception {
         player.setStatus(STATUS.WAIT_FOR_CMD);
@@ -36,5 +37,62 @@ public class RollCmd_OwnLandTest {
         player.command(rollCmd);
 
         assertThat(player.getStatus(), is(STATUS.WAIT_FOR_UPGRADE_RESPONSE));
+    }
+
+    @Test
+    public void should_turn_end_after_sayYes() throws Exception {
+        player.setStatus(STATUS.WAIT_FOR_UPGRADE_RESPONSE);
+        player.setMoney(TestHelper.ENOUGH_MONEY);
+
+        player.sayYes();
+
+        assertThat(player.getStatus(), is(STATUS.TURN_END));
+    }
+
+    @Test
+    public void should_change_money_after_sayYes() throws Exception {
+        player.setStatus(STATUS.WAIT_FOR_UPGRADE_RESPONSE);
+        player.setMoney(TestHelper.ENOUGH_MONEY);
+        when(ownLand.getPrice()).thenReturn(TestHelper.LAND_PRICE);
+        int money = player.getMoney();
+
+        player.sayYes();
+
+        assertThat(player.getMoney(), is(money - TestHelper.LAND_PRICE));
+    }
+
+    @Test
+    public void should_change_land_level_after_sayYes() throws Exception {
+        player.setStatus(STATUS.WAIT_FOR_UPGRADE_RESPONSE);
+        EmptyLand myland = new EmptyLand(TestHelper.LAND_PRICE);
+        myland.setOwner(other);
+        when(gameMap.getPlace(anyInt())).thenReturn(myland);
+        player.setMoney(TestHelper.ENOUGH_MONEY);
+        int level = myland.getLevel();
+
+        player.sayYes();
+
+        assertThat(myland.getLevel(), is(level + 1));
+    }
+
+    @Test
+    public void should_turn_end_after_sayNo() throws Exception {
+        player.setStatus(STATUS.WAIT_FOR_UPGRADE_RESPONSE);
+        player.setMoney(TestHelper.ENOUGH_MONEY);
+
+        player.sayNo();
+
+        assertThat(player.getStatus(), is(STATUS.TURN_END));
+    }
+
+    @Test
+    public void should_wait_for_buy_response_after_wrong_cmd() throws Exception {
+        player.setStatus(STATUS.WAIT_FOR_UPGRADE_RESPONSE);
+        player.setMoney(TestHelper.ENOUGH_MONEY);
+
+        player.sayWrongCommand();
+
+        assertThat(player.getStatus(), is(STATUS.WAIT_FOR_UPGRADE_RESPONSE));
+
     }
 }

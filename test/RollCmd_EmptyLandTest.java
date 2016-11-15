@@ -43,7 +43,7 @@ public class RollCmd_EmptyLandTest {
         player.setStatus(STATUS.WAIT_FOR_BUY_RESPONSE);
         player.setMoney(TestHelper.ENOUGH_MONEY);
 
-        player.command(RollCmd.sayYesToBuy);
+        player.sayYes();
 
         assertThat(player.getStatus(), is(STATUS.TURN_END));
     }
@@ -55,7 +55,7 @@ public class RollCmd_EmptyLandTest {
         player.setMoney(TestHelper.ENOUGH_MONEY);
         int money = player.getMoney();
 
-        player.command(RollCmd.sayYesToBuy);
+        player.sayYes();
 
         assertThat(player.getMoney(), is(money - TestHelper.LAND_PRICE));
     }
@@ -67,7 +67,7 @@ public class RollCmd_EmptyLandTest {
         player.setMoney(TestHelper.ENOUGH_MONEY);
         int landNum = player.getLandNum();
 
-        player.command(RollCmd.sayYesToBuy);
+        player.sayYes();
 
         assertThat(player.getLandNum(), is(landNum + 1));
     }
@@ -79,7 +79,7 @@ public class RollCmd_EmptyLandTest {
         when(gameMap.getPlace(anyInt())).thenReturn(emptyLand);
         player.setMoney(TestHelper.ENOUGH_MONEY);
 
-        player.command(RollCmd.sayYesToBuy);
+        player.sayYes();
 
         assertThat(emptyLand.getOwner(), is(player));
     }
@@ -92,7 +92,7 @@ public class RollCmd_EmptyLandTest {
         int money = player.getMoney();
         int landNum = player.getLandNum();
 
-        player.command(RollCmd.sayYesToBuy);
+        player.sayYes();
 
         assertThat(player.getMoney(), is(money));
         assertThat(player.getLandNum(), is(landNum));
@@ -105,7 +105,7 @@ public class RollCmd_EmptyLandTest {
         when(gameMap.getPlace(anyInt())).thenReturn(emptyLand);
         player.setMoney(TestHelper.ENOUGH_MONEY);
 
-        player.command(RollCmd.sayNoToBuy);
+        player.sayNo();
 
         assertThat(player.getStatus(), is(STATUS.TURN_END));
     }
@@ -116,7 +116,7 @@ public class RollCmd_EmptyLandTest {
         when(gameMap.getPlace(anyInt())).thenReturn(emptyLand);
         player.setMoney(TestHelper.ENOUGH_MONEY);
 
-        player.command(RollCmd.wrongCommandToBuy);
+        player.sayWrongCommand();
 
         assertThat(player.getStatus(), is(STATUS.WAIT_FOR_BUY_RESPONSE));
 

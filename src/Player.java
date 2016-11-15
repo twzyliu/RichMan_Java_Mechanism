@@ -46,10 +46,26 @@ public class Player {
     }
 
     public <T> void command(T command) {
-        status = status.action(this, command);
+        try {
+            status = (STATUS) command.getClass().getMethod("execute", Player.class).invoke(command, this);
+        } catch (Exception e) {
+            status = null;
+        }
     }
 
     public void setStatus(STATUS status) {
         this.status = status;
+    }
+
+    public void sayYes() {
+        command(getStatus().sayYes());
+    }
+
+    public void sayNo() {
+        command(getStatus().sayNo());
+    }
+
+    public void sayWrongCommand() {
+        command(getStatus().sayWrongCommand());
     }
 }

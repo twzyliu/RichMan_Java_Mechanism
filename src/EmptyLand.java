@@ -4,6 +4,7 @@
 public class EmptyLand extends Place{
     private int price;
     private Player owner = null;
+    private int level = 0;
 
     public EmptyLand(int price) {
         this.price = price;
@@ -24,5 +25,13 @@ public class EmptyLand extends Place{
     @Override
     public STATUS changeStatus(Player player) {
         return player == getOwner() ? STATUS.WAIT_FOR_UPGRADE_RESPONSE : STATUS.WAIT_FOR_BUY_RESPONSE;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void levelUp() {
+        level += 1;
     }
 }
