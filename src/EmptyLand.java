@@ -20,4 +20,9 @@ public class EmptyLand extends Place{
     public void setOwner(Player owner) {
         this.owner = owner;
     }
+
+    @Override
+    public STATUS changeStatus(Player player) {
+        return player == getOwner() ? STATUS.WAIT_FOR_UPGRADE_RESPONSE : STATUS.WAIT_FOR_BUY_RESPONSE;
+    }
 }

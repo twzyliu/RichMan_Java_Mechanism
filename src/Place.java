@@ -3,4 +3,7 @@
  */
 public class Place {
 
+    public STATUS changeStatus(Player player) {
+        return STATUS.TURN_END;
+    }
 }

@@ -8,13 +8,10 @@ public class RollCmd implements Command {
         GameMap gameMap = player.getGameMap();
         int positon = gameMap.move(player.getPosition());
         Place place = gameMap.getPlace(positon);
-        if (place instanceof EmptyLand) {
-            return STATUS.WAIT_FOR_RESPONSE;
-        }
-        return null;
+        return place.changeStatus(player);
     }
 
-    public static Response sayYes = player ->
+    public static Response sayYesToBuy = player ->
     {
         GameMap gameMap = player.getGameMap();
         int positon = gameMap.move(player.getPosition());
@@ -27,5 +24,7 @@ public class RollCmd implements Command {
         return STATUS.TURN_END;
     };
 
-    public static Response sayNo = player -> STATUS.TURN_END;
+    public static Response sayNoToBuy = player -> STATUS.TURN_END;
+
+    public static Response wrongCommandToBuy = player -> STATUS.WAIT_FOR_BUY_RESPONSE;
 }

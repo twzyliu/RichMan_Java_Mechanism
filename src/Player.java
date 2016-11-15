@@ -10,21 +10,15 @@ public class Player {
     private GameMap gameMap;
     private int money;
     private List<Place> lands = new ArrayList<>();
+    private String name;
 
-    public Player(GameMap gameMap) {
+    public Player(String name,GameMap gameMap) {
+        this.name = name;
         this.gameMap = gameMap;
     }
 
     public STATUS getStatus() {
         return status;
-    }
-
-    public void execute(Command command) {
-        status = command.execute(this);
-    }
-
-    public void respond(Response response) {
-        status = response.execute(this);
     }
 
     public GameMap getGameMap() {
@@ -49,5 +43,13 @@ public class Player {
 
     public List<Place> getLands() {
         return lands;
+    }
+
+    public <T> void command(T command) {
+        status = status.action(this, command);
+    }
+
+    public void setStatus(STATUS status) {
+        this.status = status;
     }
 }
