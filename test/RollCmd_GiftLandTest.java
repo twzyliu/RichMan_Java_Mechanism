@@ -3,7 +3,6 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
-import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -20,7 +19,7 @@ public class RollCmd_GiftLandTest {
     @Before
     public void setUp() throws Exception {
         gameMap = mock(GameMap.class);
-        giftLand = mock(GiftLand.class);
+        giftLand = new GiftLand();
         player = new Player(TestHelper.PLAYER_A, gameMap);
         rollCmd = new RollCmd();
         when(gameMap.getPlace(anyInt())).thenReturn(giftLand);
@@ -29,7 +28,6 @@ public class RollCmd_GiftLandTest {
     @Test
     public void should_wait_for_gift_response_after_roll_to_giftland() throws Exception {
         player.setStatus(STATUS.WAIT_FOR_CMD);
-        when(giftLand.changeStatus(any())).thenReturn(STATUS.WAIT_FOR_GIFT_RESPONSE);
 
         player.command(rollCmd);
 
@@ -40,7 +38,7 @@ public class RollCmd_GiftLandTest {
     public void should_turn_end_after_wrong_cmd() throws Exception {
         player.setStatus(STATUS.WAIT_FOR_GIFT_RESPONSE);
 
-        player.sayWrongCommand();
+        player.wrongCommand();
 
         assertThat(player.getStatus(), is(STATUS.TURN_END));
     }

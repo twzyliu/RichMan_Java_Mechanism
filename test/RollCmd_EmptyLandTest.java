@@ -113,7 +113,7 @@ public class RollCmd_EmptyLandTest {
         when(gameMap.getPlace(anyInt())).thenReturn(emptyLand);
         player.setMoney(TestHelper.ENOUGH_MONEY);
 
-        player.sayWrongCommand();
+        player.wrongCommand();
 
         assertThat(player.getStatus(), is(STATUS.WAIT_FOR_BUY_RESPONSE));
 

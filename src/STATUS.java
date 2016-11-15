@@ -51,7 +51,32 @@ public enum STATUS {
         public Response choseThree() {
             return Response.giftChoseThree;
         }
-    }, GAME_OVER;
+    }, GAME_OVER, WAIT_FOR_TOOL_RESPONSE{
+        @Override
+        public Response choseOne() {
+            return Response.toolChoseOne;
+        }
+
+        @Override
+        public Response choseTwo() {
+            return Response.toolChoseTwo;
+        }
+
+        @Override
+        public Response choseThree() {
+            return Response.toolChoseThree;
+        }
+
+        @Override
+        public Response choseExit() {
+            return Response.toolChoseExit;
+        }
+
+        @Override
+        public Response sayWrongCommand() {
+            return Response.toolWrongCommand;
+        }
+    };
 
     public Response sayYes() {
         return null;
@@ -74,6 +99,10 @@ public enum STATUS {
     }
 
     public Response choseThree() {
+        return null;
+    }
+
+    public Response choseExit() {
         return null;
     }
 }

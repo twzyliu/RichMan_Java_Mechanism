@@ -85,7 +85,7 @@ public class RollCmd_OwnLandTest {
         player.setStatus(STATUS.WAIT_FOR_UPGRADE_RESPONSE);
         player.setMoney(TestHelper.ENOUGH_MONEY);
 
-        player.sayWrongCommand();
+        player.wrongCommand();
 
         assertThat(player.getStatus(), is(STATUS.WAIT_FOR_UPGRADE_RESPONSE));
 

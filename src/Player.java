@@ -5,6 +5,7 @@ import java.util.List;
  * Created by zyongliu on 15/11/16.
  */
 public class Player {
+    public static final int MAX_TOOL_SPACE = 10;
     private String name;
     private STATUS status;
     private int position = 0;
@@ -13,6 +14,10 @@ public class Player {
     private int point = 0;
     private int godDays = 0;
     private List<Place> lands = new ArrayList<>();
+    private int prisonDays = 0;
+    private Barricade barricade = new Barricade();
+    private Robot robot = new Robot();
+    private Bomb bomb = new Bomb();
 
     public Player(String name, GameMap gameMap) {
         this.name = name;
@@ -75,7 +80,7 @@ public class Player {
         command(getStatus().sayNo());
     }
 
-    public void sayWrongCommand() {
+    public void wrongCommand() {
         command(getStatus().sayWrongCommand());
     }
 
@@ -97,6 +102,34 @@ public class Player {
         } catch (Exception e) {
             status = null;
         }
+    }
+
+    public int getPrisonDays() {
+        return prisonDays;
+    }
+
+    public void gotoPtison() {
+        prisonDays += Prison.PRISONDAYS;
+    }
+
+    public int getToolsNum() {
+        return barricade.getNum() + robot.getNum() + bomb.getNum();
+    }
+
+    public Barricade getBarricade() {
+        return barricade;
+    }
+
+    public Robot getRobot() {
+        return robot;
+    }
+
+    public Bomb getBomb() {
+        return bomb;
+    }
+
+    public void choseExit() {
+        command(getStatus().choseExit());
     }
 }
 

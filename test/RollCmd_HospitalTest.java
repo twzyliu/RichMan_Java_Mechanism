@@ -10,19 +10,19 @@ import static org.mockito.Mockito.when;
 /**
  * Created by zyongliu on 16/11/16.
  */
-public class RollCmd_HosipitalTest {
+public class RollCmd_HospitalTest {
     private GameMap gameMap;
-    private Hosipital hosipital;
+    private Hospital hospital;
     private Player player;
     private RollCmd rollCmd;
 
     @Before
     public void setUp() throws Exception {
         gameMap = mock(GameMap.class);
-        hosipital = new Hosipital();
+        hospital = new Hospital();
         player = new Player(TestHelper.PLAYER_A, gameMap);
         rollCmd = new RollCmd();
-        when(gameMap.getPlace(anyInt())).thenReturn(hosipital);
+        when(gameMap.getPlace(anyInt())).thenReturn(hospital);
     }
 
     @Test
