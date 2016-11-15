@@ -31,4 +31,20 @@ public interface Response {
     };
     Response sayNoToUpgrade = player -> STATUS.TURN_END;
     Response wrongCommandToUpgrade = player -> STATUS.WAIT_FOR_UPGRADE_RESPONSE;
+
+    Response wrongCommandToGift = player -> STATUS.TURN_END;
+    Response giftChoseOne = player -> {
+        player.setMoney(player.getMoney()+ GiftLand.GIFT_MONEY);
+        return STATUS.TURN_END;
+    };
+    Response giftChoseTwo = player ->{
+        player.setPoint(player.getPoint() + GiftLand.GIFT_POINT);
+        return STATUS.TURN_END;
+    };
+    Response giftChoseThree = player -> {
+        player.gainGod();
+        return STATUS.TURN_END;
+    };
+
+
 }

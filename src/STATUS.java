@@ -31,7 +31,27 @@ public enum STATUS {
         public Response sayWrongCommand() {
             return Response.wrongCommandToUpgrade;
         }
-    };
+    }, WAIT_FOR_GIFT_RESPONSE{
+        @Override
+        public Response sayWrongCommand() {
+            return Response.wrongCommandToGift;
+        }
+
+        @Override
+        public Response choseOne() {
+            return Response.giftChoseOne;
+        }
+
+        @Override
+        public Response choseTwo() {
+            return Response.giftChoseTwo;
+        }
+
+        @Override
+        public Response choseThree() {
+            return Response.giftChoseThree;
+        }
+    }, GAME_OVER;
 
     public Response sayYes() {
         return null;
@@ -42,6 +62,18 @@ public enum STATUS {
     }
 
     public Response sayWrongCommand() {
+        return null;
+    }
+
+    public Response choseOne() {
+        return null;
+    }
+
+    public Response choseTwo() {
+        return null;
+    }
+
+    public Response choseThree() {
         return null;
     }
 }

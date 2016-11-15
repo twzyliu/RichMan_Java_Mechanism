@@ -4,7 +4,6 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
-import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -22,7 +21,7 @@ public class RollCmd_EmptyLandTest {
     @Before
     public void setUp() throws Exception {
         gameMap = mock(GameMap.class);
-        emptyLand = mock(EmptyLand.class);
+        emptyLand = new EmptyLand(TestHelper.LAND_PRICE);
         player = new Player(TestHelper.PLAYER_A, gameMap);
         rollCmd = new RollCmd();
         when(gameMap.getPlace(anyInt())).thenReturn(emptyLand);
@@ -31,7 +30,6 @@ public class RollCmd_EmptyLandTest {
     @Test
     public void should_wait_for_buy_response_after_roll_to_emptyland() throws Exception {
         player.setStatus(STATUS.WAIT_FOR_CMD);
-        when(emptyLand.changeStatus(any())).thenReturn(STATUS.WAIT_FOR_BUY_RESPONSE);
 
         player.command(rollCmd);
 
@@ -51,7 +49,6 @@ public class RollCmd_EmptyLandTest {
     @Test
     public void should_change_money_after_sayYes() throws Exception {
         player.setStatus(STATUS.WAIT_FOR_BUY_RESPONSE);
-        when(emptyLand.getPrice()).thenReturn(TestHelper.LAND_PRICE);
         player.setMoney(TestHelper.ENOUGH_MONEY);
         int money = player.getMoney();
 
