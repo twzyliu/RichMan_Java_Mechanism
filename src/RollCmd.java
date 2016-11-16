@@ -3,7 +3,8 @@
  */
 public class RollCmd implements Command {
     @Override
-    public STATUS execute(Player player) {
+    public <T> STATUS execute(T obj) {
+        Player player = (Player) obj;
         GameMap gameMap = player.getGameMap();
         int positon = gameMap.move(player.getPosition());
         Place place = gameMap.getPlace(positon);

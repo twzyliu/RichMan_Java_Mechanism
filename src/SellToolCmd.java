@@ -5,7 +5,8 @@ public class SellToolCmd implements Command {
     private int toolNum = 0;
 
     @Override
-    public STATUS execute(Player player) {
+    public <T> STATUS execute(T obj) {
+        Player player = (Player) obj;
         player.getTools().get(toolNum - 1).selled(player);
         return STATUS.WAIT_FOR_CMD;
     }

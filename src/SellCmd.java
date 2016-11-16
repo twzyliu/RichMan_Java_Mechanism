@@ -5,7 +5,8 @@ public class SellCmd implements Command {
     private int landNum = 0;
 
     @Override
-    public STATUS execute(Player player) {
+    public <T> STATUS execute(T obj) {
+        Player player = (Player) obj;
         GameMap gameMap = player.getGameMap();
         int position = player.getPosition();
         EmptyLand emptyLand = (EmptyLand) gameMap.getPlace(position + this.landNum);

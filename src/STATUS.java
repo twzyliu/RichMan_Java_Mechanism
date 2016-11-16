@@ -76,7 +76,7 @@ public enum STATUS {
         public Response sayWrongCommand() {
             return Response.toolWrongCommand;
         }
-    };
+    }, EXIT;
 
     public Response sayYes() {
         return null;

@@ -6,7 +6,7 @@ import static java.util.Arrays.asList;
 /**
  * Created by zyongliu on 15/11/16.
  */
-public class Player {
+public class Player implements WithCommandability {
     public static final int MAX_TOOL_SPACE = 10;
     private String name;
     private STATUS status;
@@ -99,9 +99,10 @@ public class Player {
         command(getStatus().choseThree());
     }
 
+    @Override
     public <T> void command(T command) {
         try {
-            status = (STATUS) command.getClass().getMethod("execute", Player.class).invoke(command, this);
+            status = (STATUS) command.getClass().getMethod("execute", Object.class).invoke(command, this);
         } catch (Exception e) {
             status = null;
         }

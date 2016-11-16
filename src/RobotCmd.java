@@ -4,7 +4,8 @@
 public class RobotCmd implements Command {
 
     @Override
-    public STATUS execute(Player player) {
+    public <T> STATUS execute(T obj) {
+        Player player = (Player) obj;
         Robot robot = player.getRobot();
         if (robot.getNum() > 0) {
             robot.use(player, 0);
