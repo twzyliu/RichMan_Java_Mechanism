@@ -12,4 +12,10 @@ public class Barricade extends Tool {
     public int getPoint() {
         return point;
     }
+
+    @Override
+    public int work(Player player, int position, int hospitalPosition) {
+        player.setPosition(position);
+        return position;
+    }
 }

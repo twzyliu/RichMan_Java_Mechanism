@@ -33,4 +33,8 @@ public class Tool {
             num -= 1;
         }
     }
+
+    public int work(Player player, int position, int hospitalPosition) {
+        return 0;
+    }
 }

@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import static java.util.Arrays.asList;
+
 /**
  * Created by zyongliu on 15/11/16.
  */
@@ -12,4 +17,6 @@ public class TestHelper {
     public static final int TOOL_LARGE_STEP = 20;
     public static final int SELL_LAND_NUM = 1;
     public static final int SELL_TOOL_NUM = 1;
+    public static final int INIT_MONEY = 10000;
+    public static final List<String> PLAYERS_NAME = new ArrayList<>(asList(PLAYER_A,PLAYER_B));
 }

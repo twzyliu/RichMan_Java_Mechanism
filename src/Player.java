@@ -9,14 +9,15 @@ import static java.util.Arrays.asList;
 public class Player implements WithCommandability {
     public static final int MAX_TOOL_SPACE = 10;
     private String name;
-    private STATUS status;
+    private STATUS status = STATUS.WAIT_FOR_CMD;
     private int position = 0;
     private GameMap gameMap;
     private int money = 0;
     private int point = 0;
     private int godDays = 0;
-    private List<Place> lands = new ArrayList<>();
     private int prisonDays = 0;
+    private int hospitalDays = 0;
+    private List<Place> lands = new ArrayList<>();
     private Barricade barricade = new Barricade();
     private Robot robot = new Robot();
     private Bomb bomb = new Bomb();
@@ -138,6 +139,18 @@ public class Player implements WithCommandability {
 
     public List<Tool> getTools() {
         return tools;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public void gotoHospital() {
+        hospitalDays += Hospital.HOSPITAL_DAYS;
+    }
+
+    public int getHospitalDays() {
+        return hospitalDays;
     }
 }
 

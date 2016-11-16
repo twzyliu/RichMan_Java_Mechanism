@@ -6,8 +6,8 @@ public class RollCmd implements Command {
     public <T> STATUS execute(T obj) {
         Player player = (Player) obj;
         GameMap gameMap = player.getGameMap();
-        int positon = gameMap.move(player.getPosition());
-        Place place = gameMap.getPlace(positon);
+        int target = gameMap.move(player);
+        Place place = gameMap.getPlace(target);
         return place.changeStatus(player);
     }
 }

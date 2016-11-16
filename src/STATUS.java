@@ -76,7 +76,7 @@ public enum STATUS {
         public Response sayWrongCommand() {
             return Response.toolWrongCommand;
         }
-    }, EXIT;
+    }, EXIT, WAIT_FOR_INIT_MONEY, WAIT_FOR_INIT_PLAYERS, GAME_START;
 
     public Response sayYes() {
         return null;
@@ -105,4 +105,5 @@ public enum STATUS {
     public Response choseExit() {
         return null;
     }
+
 }

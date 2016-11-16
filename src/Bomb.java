@@ -12,4 +12,11 @@ public class Bomb extends Tool{
     public int getPoint() {
         return point;
     }
+
+    @Override
+    public int work(Player player, int position, int hospitalPosition) {
+        player.gotoHospital();
+        player.setPosition(hospitalPosition);
+        return hospitalPosition;
+    }
 }
