@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.util.Arrays.asList;
+
 /**
  * Created by zyongliu on 15/11/16.
  */
@@ -18,6 +20,7 @@ public class Player {
     private Barricade barricade = new Barricade();
     private Robot robot = new Robot();
     private Bomb bomb = new Bomb();
+    private List<Tool> tools = new ArrayList<>(asList(barricade, robot, bomb));
 
     public Player(String name, GameMap gameMap) {
         this.name = name;
@@ -130,6 +133,10 @@ public class Player {
 
     public void choseExit() {
         command(getStatus().choseExit());
+    }
+
+    public List<Tool> getTools() {
+        return tools;
     }
 }
 

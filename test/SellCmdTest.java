@@ -31,7 +31,7 @@ public class SellCmdTest {
     public void should_wait_for_cmd_after_sell() throws Exception {
         player.setStatus(STATUS.WAIT_FOR_CMD);
 
-        sellCmd.setStep(TestHelper.SELL_STEP);
+        sellCmd.setLandNum(TestHelper.SELL_LAND_NUM);
         player.command(sellCmd);
 
         assertThat(player.getStatus(), is(STATUS.WAIT_FOR_CMD));
@@ -43,7 +43,7 @@ public class SellCmdTest {
         player.getLands().add(emptyLand);
         int landNum = player.getLandNum();
 
-        sellCmd.setStep(TestHelper.SELL_STEP);
+        sellCmd.setLandNum(TestHelper.SELL_LAND_NUM);
         player.command(sellCmd);
 
         assertThat(player.getLandNum(), is(landNum - 1));
@@ -54,7 +54,7 @@ public class SellCmdTest {
         player.setStatus(STATUS.WAIT_FOR_CMD);
         player.getLands().add(emptyLand);
 
-        sellCmd.setStep(TestHelper.SELL_STEP);
+        sellCmd.setLandNum(TestHelper.SELL_LAND_NUM);
         player.command(sellCmd);
 
         assertNull(emptyLand.getOwner());
@@ -65,7 +65,7 @@ public class SellCmdTest {
         player.setStatus(STATUS.WAIT_FOR_CMD);
         player.getLands().add(emptyLand);
 
-        sellCmd.setStep(TestHelper.SELL_STEP);
+        sellCmd.setLandNum(TestHelper.SELL_LAND_NUM);
         player.command(sellCmd);
 
         assertThat(emptyLand.getLevel(), is(0));
@@ -77,7 +77,7 @@ public class SellCmdTest {
         player.getLands().add(emptyLand);
         int money = player.getMoney();
 
-        sellCmd.setStep(TestHelper.SELL_STEP);
+        sellCmd.setLandNum(TestHelper.SELL_LAND_NUM);
         player.command(sellCmd);
         assertThat(player.getMoney(), is(money + (emptyLand.getPrice() * (emptyLand.getLevel() + 1) * 2)));
     }
@@ -89,7 +89,7 @@ public class SellCmdTest {
         int money = player.getMoney();
         int landNum = player.getLandNum();
 
-        sellCmd.setStep(TestHelper.SELL_STEP);
+        sellCmd.setLandNum(TestHelper.SELL_LAND_NUM);
         player.command(sellCmd);
 
         assertThat(player.getMoney(), is(money));

@@ -21,8 +21,15 @@ public class Tool {
     public void use(Player player, int step) {
         GameMap gameMap = player.getGameMap();
         Place place = gameMap.getPlace(player.getPosition() + step);
-        if (place.getPlayer() == null & place.getTool()==null) {
+        if (place.getPlayer() == null & place.getTool() == null) {
             place.setTool(this);
+            num -= 1;
+        }
+    }
+
+    public void selled(Player player) {
+        if (getNum() > 0) {
+            player.setPoint(player.getPoint() + getPoint());
             num -= 1;
         }
     }
