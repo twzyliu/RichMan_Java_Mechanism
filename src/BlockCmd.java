@@ -6,8 +6,9 @@ public class BlockCmd implements Command {
 
     @Override
     public STATUS execute(Player player) {
-        if (player.getBarricade().getNum() > 0 & step > 0) {
-            player.getBarricade().use(player, step);
+        Barricade barricade = player.getBarricade();
+        if (barricade.getNum() > 0 & step > 0) {
+            barricade.use(player, step);
         }
         return STATUS.WAIT_FOR_CMD;
     }

@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8abc7bd2-46b5-44fc-b590-656d631cbc33" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BombCmd.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/BombCmdTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RobotCmd.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SellCmd.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/RobotCmdTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/SellCmdTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Bomb.java" afterPath="$PROJECT_DIR$/src/Bomb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Tool.java" afterPath="$PROJECT_DIR$/src/Tool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BlockCmd.java" afterPath="$PROJECT_DIR$/src/BlockCmd.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BombCmd.java" afterPath="$PROJECT_DIR$/src/BombCmd.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmptyLand.java" afterPath="$PROJECT_DIR$/src/EmptyLand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Robot.java" afterPath="$PROJECT_DIR$/src/Robot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/TestHelper.java" afterPath="$PROJECT_DIR$/test/TestHelper.java" />
     </list>
     <ignored path="RichMan_Java_Mechanism.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +33,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Barricade.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Barricade.java">
+      <file leaf-file-name="RobotCmdTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/RobotCmdTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="9" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="280">
+              <caret line="57" column="5" selection-start-line="49" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Prison.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Prison.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Robot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Robot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellCmdTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/SellCmdTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/TestHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SellCmd.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SellCmd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#627#628#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmptyLand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EmptyLand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BombCmd.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BombCmd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -41,99 +133,8 @@
       <file leaf-file-name="BlockCmd.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BlockCmd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="9" selection-start-line="15" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockCmdTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/BlockCmdTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="113" column="5" selection-start-line="88" selection-start-column="4" selection-end-line="113" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/PlayerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BombCmdTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/BombCmdTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
-              <folding>
-                <element signature="e#2604#2605#0" expanded="true" />
-                <element signature="e#2631#2632#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bomb.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Bomb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Response.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-              <folding>
-                <element signature="docComment;class#Response#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BombCmd.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BombCmd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -217,25 +218,29 @@
         <option value="$PROJECT_DIR$/test/RollCmd_ToolsLandTest.java" />
         <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/ToolLand.java" />
-        <option value="$PROJECT_DIR$/src/Robot.java" />
         <option value="$PROJECT_DIR$/test/RollCmd_ToolLandTest.java" />
         <option value="$PROJECT_DIR$/src/STATUS.java" />
-        <option value="$PROJECT_DIR$/src/EmptyLand.java" />
         <option value="$PROJECT_DIR$/test/RollCmd_OwnLandTest.java" />
         <option value="$PROJECT_DIR$/src/Response.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/RollCmd.java" />
         <option value="$PROJECT_DIR$/src/Command.java" />
         <option value="$PROJECT_DIR$/test/PlayerTest.java" />
-        <option value="$PROJECT_DIR$/src/Place.java" />
         <option value="$PROJECT_DIR$/src/Barricade.java" />
-        <option value="$PROJECT_DIR$/test/TestHelper.java" />
         <option value="$PROJECT_DIR$/test/BlockCmdTest.java" />
-        <option value="$PROJECT_DIR$/src/BlockCmd.java" />
-        <option value="$PROJECT_DIR$/src/BombCmd.java" />
         <option value="$PROJECT_DIR$/src/Bomb.java" />
         <option value="$PROJECT_DIR$/src/Tool.java" />
         <option value="$PROJECT_DIR$/test/BombCmdTest.java" />
+        <option value="$PROJECT_DIR$/src/RobotCmd.java" />
+        <option value="$PROJECT_DIR$/src/BlockCmd.java" />
+        <option value="$PROJECT_DIR$/src/BombCmd.java" />
+        <option value="$PROJECT_DIR$/test/RobotCmdTest.java" />
+        <option value="$PROJECT_DIR$/src/Place.java" />
+        <option value="$PROJECT_DIR$/src/Robot.java" />
+        <option value="$PROJECT_DIR$/test/TestHelper.java" />
+        <option value="$PROJECT_DIR$/src/EmptyLand.java" />
+        <option value="$PROJECT_DIR$/src/SellCmd.java" />
+        <option value="$PROJECT_DIR$/test/SellCmdTest.java" />
       </list>
     </option>
   </component>
@@ -1034,44 +1039,44 @@
       <option name="presentableId" value="Default" />
       <updated>1479185200452</updated>
       <workItem from="1479185201739" duration="1508000" />
-      <workItem from="1479192162376" duration="34503000" />
+      <workItem from="1479192162376" duration="36554000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 27m 50s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 02m 32s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 28m 11s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 03m 59s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 28m 59s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 04m 58s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 29m 14s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 06m 03s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 29m 40s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 06m 20s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 30m 13s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 06m 58s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 30m 20s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 07m 14s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 31m 15s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 09m 08s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 31m 27s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 09m 55s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 13h 31m 43s.xml">
+    <history-entry file="All_in_RichMan_Java_Mechanism - 2016.11.16 at 14h 10m 15s.xml">
       <configuration name="All in RichMan_Java_Mechanism" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36011000" />
+    <option name="totallyTimeSpent" value="38062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1224,14 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Prison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MineLand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1288,14 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Robot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -1334,35 +1323,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RollCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Place.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1376,22 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmptyLand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1402,64 +1351,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BombCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BlockCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="9" selection-start-line="15" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="126" column="16" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
-          <folding>
-            <element signature="e#2604#2605#0" expanded="true" />
-            <element signature="e#2631#2632#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Barricade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="22" column="9" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bomb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/BlockCmdTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="113" column="5" selection-start-line="88" selection-start-column="4" selection-end-line="113" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1473,10 +1369,147 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/BlockCmdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="51" column="5" selection-start-line="40" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/BombCmdTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
+        <state relative-caret-position="340">
+          <caret line="73" column="5" selection-start-line="65" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RollCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bomb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Place.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RobotCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BlockCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Prison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BombCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmptyLand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="55" column="51" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RobotCmdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="57" column="5" selection-start-line="49" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SellCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SellCmdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

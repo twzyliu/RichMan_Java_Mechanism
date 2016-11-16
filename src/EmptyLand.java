@@ -49,4 +49,10 @@ public class EmptyLand extends Place {
     public int getBill() {
         return (int) ((getPrice() / 2) * pow(2, getLevel()));
     }
+
+    public int selled() {
+        owner = null;
+        level = 0;
+        return (getPrice() * (getLevel() + 1)) * 2;
+    }
 }

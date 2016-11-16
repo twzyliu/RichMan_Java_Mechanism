@@ -6,8 +6,9 @@ public class BombCmd implements Command {
 
     @Override
     public STATUS execute(Player player) {
-        if (player.getBomb().getNum() > 0 & step > 0) {
-            player.getBomb().use(player, step);
+        Bomb bomb = player.getBomb();
+        if (bomb.getNum() > 0 & step > 0) {
+            bomb.use(player, step);
         }
         return STATUS.WAIT_FOR_CMD;
     }

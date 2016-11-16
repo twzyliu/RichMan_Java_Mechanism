@@ -10,4 +10,5 @@ public class TestHelper {
     public static final int ENOUGH_POINT = 99999;
     public static final int TOOL_STEP = 1;
     public static final int TOOL_LARGE_STEP = 20;
+    public static final int SELL_STEP = 1;
 }
