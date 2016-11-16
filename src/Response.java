@@ -25,7 +25,7 @@ public interface Response {
         GameMap gameMap = player.getGameMap();
         int positon = player.getPosition();
         EmptyLand ownerLand = (EmptyLand) gameMap.getPlace(positon);
-        if (player.getMoney() >= ownerLand.getPrice()) {
+        if (player.getMoney() >= ownerLand.getPrice() & ownerLand.getLevel() < EmptyLand.MAX_LEVEL) {
             player.setMoney(player.getMoney() - ownerLand.getPrice());
             ownerLand.levelUp();
         }
@@ -50,7 +50,7 @@ public interface Response {
     };
 
 
-    static STATUS getStatus(Player player, Tool Tool) {
+    static STATUS buyTool(Player player, Tool Tool) {
         if (player.getPoint() >= Tool.getPoint() & player.getToolsNum() < Player.MAX_TOOL_SPACE) {
             Tool.setNum(Tool.getNum() + 1);
             player.setPoint(player.getPoint() - Tool.getPoint());
@@ -59,18 +59,17 @@ public interface Response {
     }
     Response toolChoseOne = player -> {
         Tool barricade = player.getBarricade();
-        return getStatus(player, barricade);
+        return buyTool(player, barricade);
     };
 
     Response toolChoseTwo = player -> {
         Tool robot = player.getRobot();
-        return getStatus(player, robot);
+        return buyTool(player, robot);
     };
     Response toolChoseThree = player -> {
         Tool bomb = player.getBomb();
-        return getStatus(player, bomb);
+        return buyTool(player, bomb);
     };
     Response toolChoseExit = player -> STATUS.TURN_END;
     Response toolWrongCommand = player -> STATUS.WAIT_FOR_TOOL_RESPONSE;
-
 }

@@ -17,4 +17,8 @@ public class Tool {
     public void setNum(int num) {
         this.num = num;
     }
+
+    public void use(Player player, int step) {
+
+    }
 }

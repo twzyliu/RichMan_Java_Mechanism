@@ -4,6 +4,7 @@ import static java.lang.Math.pow;
  * Created by zyongliu on 15/11/16.
  */
 public class EmptyLand extends Place {
+    public static final int MAX_LEVEL = 3;
     private int price;
     private Player owner = null;
     private int level = 0;

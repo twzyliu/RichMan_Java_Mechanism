@@ -90,4 +90,22 @@ public class RollCmd_OwnLandTest {
         assertThat(player.getStatus(), is(STATUS.WAIT_FOR_UPGRADE_RESPONSE));
 
     }
+
+    @Test
+    public void should_no_change_when_level_is_max() throws Exception {
+        player.setStatus(STATUS.WAIT_FOR_UPGRADE_RESPONSE);
+        EmptyLand myland = new EmptyLand(TestHelper.LAND_PRICE);
+        player.setMoney(TestHelper.ENOUGH_MONEY);
+        myland.setOwner(player);
+        for (int i = 0; i < EmptyLand.MAX_LEVEL; i++) {
+            myland.levelUp();
+        }
+        when(gameMap.getPlace(anyInt())).thenReturn(myland);
+        int money = player.getMoney();
+
+        player.sayYes();
+
+        assertThat(player.getMoney(), is(money));
+        assertThat(myland.getLevel(), is(EmptyLand.MAX_LEVEL));
+    }
 }

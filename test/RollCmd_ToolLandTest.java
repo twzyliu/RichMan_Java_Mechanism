@@ -93,7 +93,7 @@ public class RollCmd_ToolLandTest {
     public void should_no_change_when_no_space_to_buy_tool() throws Exception {
         player.setStatus(STATUS.WAIT_FOR_TOOL_RESPONSE);
         player.setPoint(TestHelper.ENOUGH_POINT);
-        for (int i = 0; i< TestHelper.MAX_TOOL_SPACE; i++) {
+        for (int i = 0; i< Player.MAX_TOOL_SPACE; i++) {
             player.choseOne();
         }
         int point = player.getPoint();
