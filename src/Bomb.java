@@ -12,4 +12,5 @@ public class Bomb extends Tool{
     public int getPoint() {
         return point;
     }
+
 }
